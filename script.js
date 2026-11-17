@@ -1,209 +1,34 @@
- :root{--bg:#0b1728;--panel:#11243b;--panel2:#18314f;--line:#29415e;--muted:#9aadc3;--text:#edf5ff;--lime:#79c5ff;--lime-dark:#3d9de0;--red:#ff8e9b;--font:'DM Sans',sans-serif;--mono:'DM Mono',monospace}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px}button,input,select,textarea{font:inherit}button{cursor:pointer}.app-shell{min-height:100vh}.sidebar{width:248px;position:fixed;inset:0 auto 0 0;background:#102139;border-right:1px solid var(--line);padding:27px 18px 18px;display:flex;flex-direction:column;z-index:5}.brand{display:flex;align-items:center;gap:10px;color:var(--text);font-weight:800;font-size:20px;letter-spacing:-1px;text-decoration:none;padding:0 9px 49px}.brand-mark{width:29px;height:29px;background:var(--lime);color:#102139;display:grid;place-items:center;font-weight:800;border-radius:8px;font-size:17px}.brand-dot{color:var(--lime)}.side-label,.eyebrow{font:10px var(--mono);letter-spacing:1.3px;color:#7f8777}.side-label{padding:0 10px 12px}.side-label-spaced{margin-top:33px}.side-nav{display:grid;gap:5px}.nav-item{height:43px;border:0;background:transparent;color:#9ba194;text-align:left;padding:0 11px;border-radius:7px;display:flex;align-items:center;gap:12px;font-size:13px;transition:.2s}.nav-item:hover{background:#1b3553;color:white}.nav-item.active{background:#1d4268;color:var(--lime)}.nav-icon{width:17px;font-size:19px;text-align:center}.nav-count{margin-left:auto;font:10px var(--mono);background:#294b70;padding:3px 7px;border-radius:10px}.sidebar-bottom{margin-top:auto}.help-card{background:#152d49;border:1px solid #31577c;border-radius:10px;padding:15px;margin-bottom:18px}.help-icon{color:var(--lime);font-size:18px}.help-card strong{display:block;margin:10px 0 5px;font-size:13px}.help-card p{font-size:11px;color:#9ba391;line-height:1.6;margin:0 0 13px}.help-card button{border:0;background:transparent;color:var(--lime);padding:0;font-size:11px;font-weight:700}.help-card button span{padding-left:5px}.user-mini{border-top:1px solid var(--line);padding:17px 3px 0;display:flex;align-items:center;gap:10px}.avatar,.top-avatar{background:#1d4268;color:var(--lime);display:grid;place-items:center;border-radius:50%;font-weight:700}.avatar{width:32px;height:32px}.user-mini-info{display:grid;gap:3px;min-width:0}.user-mini-info strong{font-size:11px}.user-mini-info span{font-size:10px;color:var(--muted)}.more-btn{margin-left:auto;background:none;border:0;color:#aaa;font-size:20px}.main-area{margin-left:248px;min-height:100vh}.topbar{height:69px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 48px}.breadcrumb{font-size:11px;color:#747b70;display:flex;gap:10px}.breadcrumb b{color:#41483d}.breadcrumb strong{color:#dce1d5;font-weight:500}.top-actions{display:flex;align-items:center;gap:20px}.live-indicator{font:9px var(--mono);letter-spacing:.7px;color:#92998b}.live-indicator i,.green-dot,.tiny-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lime);margin-right:7px;box-shadow:0 0 10px #79c5ff55}.top-avatar{width:30px;height:30px;border:1px solid #424a38}.mobile-brand{display:none}.page{display:none;padding:39px 48px 55px;max-width:1500px;margin:auto}.page.active{display:block}.hero{min-height:348px;background:#132b46;border:1px solid #29415e;border-radius:13px;position:relative;overflow:hidden;display:flex;align-items:center;padding:45px 48px}.hero-copy{max-width:530px;position:relative;z-index:2}.eyebrow{display:flex;align-items:center;gap:9px}.eyebrow-line{height:1px;width:22px;background:var(--lime)}h1{font-size:clamp(38px,4.5vw,57px);letter-spacing:-3px;line-height:1.05;margin:19px 0 15px;font-weight:600}h1 em{font-style:normal;color:var(--lime)}.hero-copy p,.page-heading p{color:#9ba294;line-height:1.75;font-size:12px;max-width:440px}.hero-buttons{display:flex;gap:11px;margin-top:24px}.btn{border:0;padding:12px 17px;border-radius:6px;font-size:11px;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--lime);color:#14180f}.btn-primary:hover{background:#d4ff80}.btn-ghost{background:#244361;color:#e4e9dc}.btn-ghost span{margin-left:13px;color:var(--lime)}.hero-art{position:absolute;right:6%;top:0;width:42%;height:100%;display:grid;place-items:center}.orbit{position:absolute;border:1px solid #4b5a3c;border-radius:50%;transform:rotate(-24deg)}.orbit-one{width:300px;height:170px}.orbit-two{width:390px;height:240px;transform:rotate(34deg);border-color:#313d29}.art-cross{position:absolute;right:5%;top:16%;font-size:28px;color:var(--lime)}.art-card{position:absolute;width:215px;height:240px;border-radius:10px;padding:16px;box-shadow:0 25px 60px #0006}.card-back{background:#79c5ff;color:#20251a;transform:translate(44px,-8px) rotate(9deg)}.card-back>span{font:9px var(--mono)}.fake-lines{margin-top:40px;width:100%;height:70px;background:repeating-linear-gradient(to bottom,transparent 0 13px,#5f743c 14px 15px)}.card-front{background:#e8eadf;color:#24291f;transform:translate(-24px,15px) rotate(-7deg);display:flex;flex-direction:column;justify-content:space-between}.card-top{display:flex;justify-content:space-between;font:9px var(--mono);letter-spacing:1px}.tiny-dot{background:#6f9634}.key-illustration{font-size:80px;text-align:center;color:#768c4e;font-weight:400}.card-bottom{display:grid;gap:4px}.card-bottom strong{font-size:13px}.card-bottom span{font-size:10px;color:#74796b}.art-tag{position:absolute;bottom:24px;right:0;font:9px var(--mono);line-height:1.6;letter-spacing:1px;color:#8d9b7b}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:17px 0 44px}.stat-card{background:#11243b;border:1px solid var(--line);border-radius:8px;padding:17px 18px;min-height:116px}.stat-label{font:9px var(--mono);letter-spacing:.7px;color:#858d7e;display:flex;justify-content:space-between}.stat-label b{color:#626d58;font-weight:400}.stat-card>strong{display:block;font-size:29px;letter-spacing:-1px;margin:10px 0 3px}.stat-foot{font-size:10px;color:#858d7e}.stat-foot .green-dot{width:5px;height:5px}.stat-highlight{background:#173756;border-color:#3d9de0}.stat-highlight>strong{color:var(--lime)}.section-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:17px}.section-heading h2{font-size:21px;letter-spacing:-.7px;margin:7px 0 0}.text-link{background:none;border:0;color:var(--lime);font-size:10px;font-weight:700}.text-link span{margin-left:8px}.item-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.item-card{background:#11243b;border:1px solid var(--line);border-radius:9px;overflow:hidden;transition:.2s;min-width:0}.item-card:hover{border-color:#3d9de0;transform:translateY(-3px)}.item-image{height:156px;background:#18314f;position:relative;overflow:hidden;display:grid;place-items:center}.item-image img{width:100%;height:100%;object-fit:cover;display:block}.item-placeholder{font-size:55px;color:#87976e;opacity:.8}.item-status{position:absolute;top:12px;left:12px;font:9px var(--mono);letter-spacing:.6px;padding:6px 8px;border-radius:4px;background:#1a3452;color:var(--lime)}.item-status.lost{color:#ff9b88;background:#34231f}.save-btn{position:absolute;right:11px;top:10px;width:29px;height:29px;border:1px solid #ffffff30;background:#161a16c9;color:#fff;border-radius:50%;font-size:15px}.save-btn.saved{color:var(--lime);border-color:var(--lime)}.item-content{padding:14px}.item-category{font:9px var(--mono);letter-spacing:.8px;color:#82906f}.item-content h3{font-size:14px;margin:7px 0 8px}.item-meta{display:flex;gap:12px;color:#8c9386;font-size:10px}.item-footer{border-top:1px solid var(--line);margin-top:13px;padding-top:11px;display:flex;justify-content:space-between;align-items:center}.item-date{font:9px var(--mono);color:#727a6d}.item-open{border:0;background:none;color:var(--lime);font-size:10px;font-weight:700}.bottom-banner{margin-top:36px;background:var(--lime);color:#1b2113;padding:23px 27px;border-radius:8px;display:flex;align-items:center;justify-content:space-between}.bottom-banner .eyebrow{color:#526a2f}.bottom-banner h3{font-size:18px;letter-spacing:-.5px;margin:8px 0 4px}.bottom-banner p{font-size:11px;margin:0;color:#53623f}.btn-dark{background:#1b2116;color:#eaf4dd}.page-heading{display:flex;align-items:end;justify-content:space-between;margin:4px 0 30px}.page-heading h1{font-size:45px;margin:14px 0 8px}.page-heading p{margin:0}.filter-bar{display:flex;gap:10px;align-items:center;margin-bottom:18px}.search-box{height:42px;display:flex;align-items:center;gap:10px;padding:0 13px;background:#11243b;border:1px solid var(--line);border-radius:6px;flex:1;color:#8b9483}.search-box span{font-size:22px}.search-box input{border:0;outline:0;background:transparent;color:white;width:100%;font-size:11px}.filter-bar select{height:42px;background:#11243b;border:1px solid var(--line);color:#c4cabb;border-radius:6px;padding:0 12px;font-size:11px}.segmented{display:flex;background:#11243b;border:1px solid var(--line);border-radius:6px;padding:3px}.segment{border:0;background:transparent;color:#8c9386;font-size:10px;padding:8px 11px;border-radius:4px}.segment.active{background:#23476a;color:var(--lime)}.results-meta{display:flex;justify-content:space-between;color:#8c9386;font-size:10px;margin:20px 0 14px}.mono{font:9px var(--mono);letter-spacing:.5px;color:#687162}.empty-state{grid-column:1/-1;text-align:center;border:1px dashed #29415e;border-radius:9px;padding:55px 20px;color:#929a89}.empty-state strong{display:block;color:#e3e8dc;margin-bottom:8px}.empty-state p{font-size:11px}.modal-backdrop{position:fixed;inset:0;background:#080a08c9;z-index:20;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(5px)}.modal-backdrop.show{display:flex}.modal{width:min(520px,100%);max-height:90vh;overflow:auto;background:#191d17;border:1px solid #3a4431;border-radius:12px;padding:27px;position:relative;box-shadow:0 25px 100px #0009}.modal-close{position:absolute;right:17px;top:14px;background:none;border:0;color:#aab29f;font-size:25px}.modal h2{font-size:25px;letter-spacing:-1px;margin:9px 0}.modal-sub{font-size:11px;color:#929b89;line-height:1.6;margin:0 0 22px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font:9px var(--mono);letter-spacing:.7px;color:#a1a994}.field input,.field select,.field textarea{width:100%;background:#0b1728;border:1px solid #343c2d;color:#eef2e8;padding:11px;border-radius:5px;outline:none;font-size:11px}.field textarea{min-height:78px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--lime)}.form-submit{width:100%;margin-top:18px}.upload-note{font-size:9px;color:#747d6c}.detail-image{height:190px;border-radius:7px;background:#18314f;display:grid;place-items:center;overflow:hidden;margin:17px 0}.detail-image img{width:100%;height:100%;object-fit:cover}.detail-image span{font-size:65px;color:#91a777}.detail-description{font-size:12px;line-height:1.8;color:#aab19f}.detail-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:17px 0}.detail-fact{background:#18314f;padding:11px;border-radius:5px}.detail-fact span{display:block;font:9px var(--mono);color:#87907d;margin-bottom:5px}.detail-fact strong{font-size:11px}.detail-actions{display:flex;gap:9px}.detail-actions .btn{flex:1}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:#79c5ff;color:#0b1728;padding:11px 17px;border-radius:6px;font-size:11px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:50}.toast.show{opacity:1;transform:translate(-50%,0)}.profile-head{display:flex;align-items:center;gap:15px;margin:22px 0}.profile-large{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#1d4268;color:var(--lime);font-size:22px}.profile-head h3{margin:0 0 4px}.profile-head p{margin:0;color:#929b89;font-size:11px}
-@media(max-width:1100px){.page{padding:30px 28px}.topbar{padding:0 28px}.item-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-art{right:1%;transform:scale(.85)}}
-@media(max-width:760px){.sidebar{display:none}.main-area{margin:0}.topbar{height:58px;padding:0 17px}.mobile-brand{display:flex;align-items:center;gap:7px;background:none;border:0;color:white;font-size:15px;font-weight:800}.mobile-brand .brand-mark{width:24px;height:24px;font-size:14px}.breadcrumb{display:none}.top-actions{gap:10px}.live-indicator{font-size:8px}.page{padding:23px 16px 40px}.hero{padding:29px 23px;min-height:425px;align-items:flex-start}.hero-copy{max-width:100%}h1{font-size:43px}.hero-copy p{max-width:390px}.hero-art{width:100%;height:190px;top:auto;bottom:-12px;right:0;transform:scale(.68);transform-origin:center bottom}.art-tag{right:5%;bottom:25px}.stats-grid{grid-template-columns:repeat(2,1fr);gap:9px;margin:13px 0 34px}.stat-card{min-height:104px;padding:13px}.stat-card>strong{font-size:25px}.section-heading h2{font-size:19px}.item-grid{grid-template-columns:1fr 1fr;gap:9px}.item-image{height:120px}.item-content{padding:10px}.item-content h3{font-size:12px}.item-meta{font-size:9px;gap:7px;flex-wrap:wrap}.item-footer{margin-top:10px;padding-top:9px}.item-date{font-size:8px}.bottom-banner{padding:19px;gap:12px;align-items:flex-start;flex-direction:column}.bottom-banner h3{font-size:16px}.page-heading{align-items:flex-start;gap:15px;flex-direction:column;margin-bottom:23px}.page-heading h1{font-size:39px}.filter-bar{flex-wrap:wrap}.search-box{flex-basis:100%}.filter-bar select{flex:1}.segmented{flex:1;justify-content:space-around}.segment{flex:1}.results-meta{font-size:9px}.modal{padding:23px 18px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
-@media(max-width:390px){.item-grid{grid-template-columns:1fr}.item-image{height:155px}.hero{min-height:445px}.hero-buttons{flex-wrap:wrap}.live-indicator{letter-spacing:0}.page-heading .btn{width:100%}}
-
-.admin-table{width:100%;border-collapse:collapse;background:#11243b;border:1px solid var(--line);border-radius:8px;overflow:hidden;font-size:11px}
-.admin-table th,.admin-table td{padding:13px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
-.admin-table th{font:9px var(--mono);letter-spacing:.7px;color:#899281;background:#18314f}
-.admin-table td{color:#dce2d4}.admin-table select{background:#0b1728;color:#dce2d4;border:1px solid #29415e;padding:7px;border-radius:4px;font-size:10px}
-.admin-table button{border:0;background:#244361;color:var(--lime);padding:7px 9px;border-radius:4px;font-size:10px}
-.role-pill{font:9px var(--mono);padding:5px 7px;border-radius:4px;background:#283321;color:var(--lime);text-transform:uppercase}
-.role-pill.pending{background:#382e1c;color:#f3c66b}.role-pill.rejected{background:#392420;color:#f08a78}
-.admin-tabs{display:flex;gap:8px;margin:0 0 17px;flex-wrap:wrap}.admin-tabs button{background:#11243b;color:#aab19f;border:1px solid var(--line);padding:9px 13px;border-radius:5px;font-size:10px}.admin-tabs button.active{color:var(--lime);border-color:#3d9de0}
-.notice{background:#18314f;border:1px solid #294f73;color:#cbd9b5;border-radius:7px;padding:12px 14px;font-size:11px;line-height:1.65;margin-bottom:17px}
-.auth-row{display:flex;gap:10px;align-items:center}.auth-status{font-size:10px;color:#9ca591}.btn-small{padding:8px 10px;font-size:10px}
-@media(max-width:760px){.admin-table{display:block;overflow-x:auto;white-space:nowrap}.admin-table th,.admin-table td{padding:10px 9px}}
-
-
-/* Mobile layout cleanup */
-.mobile-nav{display:none}
-html,body{width:100%;max-width:100%;overflow-x:hidden}
-img,svg,video{max-width:100%}
-button,select,input,textarea{max-width:100%}
-.page,.main-area,.app-shell{min-width:0}
-.item-card,.stat-card,.hero-copy,.page-heading>div{min-width:0}
-.item-content h3,.item-meta,.item-availability{overflow-wrap:anywhere}
-.eyebrow,.side-label{color:#9aadc3}
-.hero{background:#132b46;border-color:#29415e}
-.hero-art .art-cross{color:var(--lime)}
-.card-back{background:#79c5ff}
-.card-front{background:#e8f1fb}
-.item-card,.stat-card,.search-box,.filter-bar select,.modal,
-.admin-table,.detail-fact{background-color:#11243b}
-.item-image,.detail-image{background:#18314f}
-.stat-highlight,.notice,.help-card{background:#173756;border-color:#294f73}
-.bottom-banner{background:#79c5ff;color:#0b1728}
-.toast{background:#79c5ff;color:#0b1728}
-.btn-ghost{background:#244361}
-.admin-table th{background:#18314f}
-.admin-table select{background:#0b1728;border-color:#29415e}
-.admin-tabs button{background:#11243b}
-.admin-tabs button.active{border-color:#3d9de0}
-.detail-fact{background:#18314f}
-
-@media(max-width:760px){
-  body{padding-bottom:calc(70px + env(safe-area-inset-bottom))}
-  .topbar{position:sticky;top:0;z-index:10;background:#0b1728ee;backdrop-filter:blur(12px)}
-  .page{padding:18px 14px 28px}
-  .hero{min-height:0;padding:24px 19px 205px;border-radius:12px}
-  .hero-copy{position:relative;z-index:2}
-  h1{font-size:clamp(32px,9vw,42px);letter-spacing:-1.8px;line-height:1.08}
-  .hero-copy p{font-size:12px;line-height:1.65}
-  .hero-art{height:185px;bottom:-5px;right:0;width:100%;transform:scale(.62);transform-origin:center bottom;pointer-events:none}
-  .art-tag{font-size:8px;right:2%;bottom:18px}
-  .hero-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-  .hero-buttons .btn{padding:12px 9px;white-space:normal}
-  .stats-grid{gap:8px;margin:12px 0 28px}
-  .stat-card{min-height:98px;padding:12px}
-  .stat-label{font-size:8px;letter-spacing:.3px}
-  .stat-card>strong{font-size:24px;margin:8px 0 2px}
-  .stat-foot{font-size:9px;line-height:1.4}
-  .section-heading{align-items:center;gap:10px}
-  .section-heading h2{font-size:18px}
-  .section-heading .text-link{max-width:112px;text-align:right;line-height:1.4}
-  .item-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
-  .item-card{min-width:0}
-  .item-image{height:clamp(104px,31vw,145px)}
-  .item-content{padding:10px}
-  .item-content h3{font-size:12px;line-height:1.35;min-height:2.7em}
-  .item-meta{font-size:9px;line-height:1.45}
-  .item-availability{display:block;font-size:9px;line-height:1.4;margin-top:6px}
-  .item-footer{align-items:flex-start;gap:5px;flex-wrap:wrap}
-  .item-open{padding:4px 0}
-  .page-heading{gap:12px;margin:0 0 20px}
-  .page-heading h1{font-size:clamp(32px,8vw,40px);letter-spacing:-1.5px}
-  .page-heading p{font-size:11px;line-height:1.6}
-  .page-heading>.btn{width:100%}
-  .filter-bar{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-  .search-box{grid-column:1/-1;width:100%;min-width:0}
-  .filter-bar select{width:100%;min-width:0}
-  .segmented{grid-column:1/-1;width:100%;min-width:0}
-  .segment{padding:9px 5px;font-size:10px}
-  .results-meta{gap:8px;align-items:flex-start;line-height:1.5}
-  .results-meta .mono{text-align:right;white-space:normal}
-  .bottom-banner{margin-top:26px;padding:18px}
-  .bottom-banner .btn{width:100%}
-  .admin-tabs{display:grid;grid-template-columns:1fr 1fr}
-  .admin-tabs button{min-width:0;padding:10px 6px}
-  .notice{font-size:10px}
-  #adminReportsTable,#adminMembersTable{max-width:100%;min-width:0;overflow-x:auto}
-  .admin-table{display:block;width:100%;min-width:760px;max-width:none;overflow-x:auto;overscroll-behavior-x:contain;white-space:normal}
-  
-  .admin-table th,.admin-table td{padding:9px 8px}
-  .admin-table td:last-child{min-width:190px}
-  #adminMembersTable .stat-card{flex-wrap:wrap}
-  #adminMembersTable .stat-card>div{min-width:0;overflow-wrap:anywhere}
-  #adminMembersTable select{min-width:105px}
-  .modal-backdrop{padding:10px;align-items:flex-end}
-  .modal{width:100%;max-height:calc(100dvh - 20px);padding:24px 17px calc(18px + env(safe-area-inset-bottom));border-radius:16px 16px 10px 10px}
-  .detail-facts{grid-template-columns:1fr 1fr;gap:8px}
-  .detail-fact{min-width:0;overflow-wrap:anywhere}
-  .detail-actions{flex-wrap:wrap}
-  .detail-actions .btn{min-width:0}
-  .toast{bottom:calc(78px + env(safe-area-inset-bottom));width:max-content;max-width:calc(100vw - 28px);text-align:center}
-  .mobile-nav{position:fixed;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));left:0;right:0;bottom:0;z-index:30;padding:7px 5px calc(7px + env(safe-area-inset-bottom));background:#10243bf5;border-top:1px solid #29415e;backdrop-filter:blur(14px)}
-  .mobile-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:0;min-height:48px;border:0;border-radius:8px;background:transparent;color:#9aadc3;padding:4px 2px}
-  .mobile-nav-item span{font-size:19px;line-height:1}
-  .mobile-nav-item small{font-size:9px;line-height:1.2;white-space:nowrap}
-  .mobile-nav-item.active{background:#1d4268;color:#79c5ff}
-}
-@media(max-width:380px){
-  .page{padding-left:11px;padding-right:11px}
-  .hero{padding-left:16px;padding-right:16px;padding-bottom:190px}
-  .hero-buttons{grid-template-columns:1fr}
-  .stats-grid{gap:7px}
-  .stat-card{padding:10px}
-  .stat-label{font-size:7px}
-  .item-grid{grid-template-columns:1fr}
-  .item-image{height:165px}
-  .item-content h3{font-size:14px;min-height:0}
-  .mobile-nav-item small{font-size:8px}
-}
-@media(hover:none){.item-card:hover,.btn:hover{transform:none}}
-
-
-/* Interface refinement: restrained surfaces, clearer hierarchy */
-:root{--lime:#79c5ff}
-body{background:#0b1728;color:#e7eef7;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-button,input,select,textarea{font:inherit}
-.btn{border-radius:7px;transition:background .16s ease,border-color .16s ease}
-.btn-primary{background:#79c5ff;color:#0b1728;border:1px solid #79c5ff}
-.btn-primary:hover{background:#9bd5ff}
-.btn-ghost{border:1px solid #29415e;color:#d8e6f4;background:#142b45}
-.item-card,.stat-card,.detail-fact,.search-box,.filter-bar select{border:1px solid #203c59;box-shadow:none}
-.item-card{border-radius:9px;overflow:hidden;transition:border-color .16s ease}
-.item-card:hover{transform:translateY(-2px);border-color:#4c83ad}
-.item-image{border-radius:0}
-.item-content h3{letter-spacing:-.2px}
-.eyebrow,.stat-label,.detail-fact span{letter-spacing:.8px}
-.modal{background:#10243b;border:1px solid #2c4b69;box-shadow:0 18px 60px #020914aa;border-radius:14px}
-.modal h2{letter-spacing:-.6px}
-.detail-image{border-radius:9px}
-.detail-fact{border-radius:7px}
-.admin-table{border:1px solid #29415e;border-radius:8px}
-.admin-table th{color:#9fb8cf;letter-spacing:.5px}
-:focus-visible{outline:2px solid #79c5ff;outline-offset:2px}
-@media(max-width:760px){
-  .modal-backdrop.show{z-index:45;align-items:flex-end;padding:10px 10px calc(10px + env(safe-area-inset-bottom))}
-  .modal{width:100%;max-height:calc(100dvh - 20px - env(safe-area-inset-bottom));padding:24px 17px 22px;overflow-y:auto;overscroll-behavior:contain;border-radius:14px}
-  .modal-close{position:sticky;float:right;top:0;right:0;z-index:2;margin:-5px -4px 0 8px;background:#10243b;border-radius:50%;width:30px;height:30px;line-height:26px}
-  .detail-image{height:clamp(145px,42vw,210px);margin:14px 0}
-  .detail-description{font-size:13px;line-height:1.65}
-  .detail-facts{gap:8px;margin:14px 0}
-  .detail-fact{padding:10px;min-height:58px}
-  .detail-fact strong{font-size:12px;overflow-wrap:anywhere}
-  .detail-actions{position:static;display:grid;grid-template-columns:1fr 1fr}
-  .mobile-nav{z-index:30}
-  .topbar{border-bottom:1px solid #203c59}
-  .hero{box-shadow:none}
-  .stat-card{border-radius:8px}
-  .item-card:hover{transform:none}
-}
-
-
-/* Brighter blue refresh */
-:root{
-  --bg:#071b33;
-  --panel:#102d4d;
-  --panel2:#173d65;
-  --line:#2b5680;
-  --muted:#a9c4df;
-  --text:#f1f7ff;
-  --lime:#79c5ff;
-  --lime-dark:#3d9de0;
-}
-body{background:#081d36;color:#f1f7ff}
-.sidebar{background:#0d2947}
-.topbar{border-color:#24496d}
-.hero{background:linear-gradient(120deg,#123b63 0%,#164a78 58%,#1c5a8c 100%);border-color:#2b6394}
-.orbit{border-color:#4d8cbd}
-.orbit-two{border-color:#356b99}
-.card-back{background:#8bd0ff;color:#102a43}
-.fake-lines{background:repeating-linear-gradient(to bottom,transparent 0 13px,#4b82ad 14px 15px)}
-.card-front{background:#edf7ff;color:#15324d}
-.key-illustration{color:#4388bb}
-.stat-card,.item-card,.search-box,.filter-bar select,.admin-table{background:#102d4d}
-.item-image,.detail-image,.detail-fact{background:#173d65}
-.help-card,.notice,.stat-highlight{background:#153b60;border-color:#326b9b}
-.nav-item.active,.mobile-nav-item.active,.segment.active{background:#1b4c78;color:#9bd8ff}
-.btn-primary{background:#79c5ff;color:#08213b;border-color:#79c5ff}
-.btn-primary:hover{background:#a3ddff;border-color:#a3ddff}
-.btn-ghost{background:#1a4268;border-color:#35658f;color:#e8f5ff}
-.bottom-banner{background:#8bd0ff;color:#08213b}
-.bottom-banner .eyebrow,.bottom-banner p{color:#245477}
-.btn-dark{background:#103252;color:#eff8ff}
-.toast{background:#8bd0ff;color:#08213b}
-.modal{background:#102d4d;border-color:#35658f}
-.field input,.field select,.field textarea,.admin-table select{background:#081d36;border-color:#315b82;color:#f1f7ff}
-.ui-icon{display:inline-block;vertical-align:middle;flex:none}
-.nav-icon{display:inline-flex;align-items:center;justify-content:center}
-.help-icon{display:inline-flex;align-items:center}
-.key-illustration{display:grid;place-items:center}
-.item-placeholder{display:grid;place-items:center}
-.item-open,.text-link,.help-card button{display:inline-flex;align-items:center;gap:5px}
-.item-meta svg{vertical-align:-2px}
-.mobile-nav-item span{display:flex;align-items:center;justify-content:center}
-.save-btn{display:grid;place-items:center}
-.save-btn svg{width:15px;height:15px}
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const icon=(name,size=16)=>{const paths={arrow:'<path d="M7 17 17 7M7 7h10v10"/>',pin:'<path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',heart:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>',package:'<path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="M3 8v9l9 5 9-5V8M12 13v9"/>',search:'<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/>',spark:'<path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3Z"/>'};return `<svg class="ui-icon" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]||paths.arrow}</svg>`};
+const cfg=window.TRACE_CONFIG||{};
+const configured=cfg.SUPABASE_URL?.startsWith("https://")&&!cfg.SUPABASE_ANON_KEY?.startsWith("PASTE_")&&cfg.SUPABASE_ANON_KEY;
+const db=(configured&&window.supabase)?window.supabase.createClient(cfg.SUPABASE_URL,cfg.SUPABASE_ANON_KEY):null;
+let session=null, profile=null, reports=[], savedIds=[], activeType="all", adminTab="reports";
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const dateLabel=d=>new Date(d).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
+function toast(m){const e=$("#toast");e.textContent=m;e.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove("show"),2600)}
+function empty(t,d){return `<div class="empty-state"><strong>${t}</strong><p>${d}</p></div>`}
+function role(){return profile?.role||"guest"} function staff(){return ["admin","moderator"].includes(role())}
+function card(r){const isSaved=savedIds.includes(r.id),itemStatus=r.item_status||"belum_ditemukan";const statusLabel=({belum_ditemukan:"Belum ditemukan",ditemukan:"Sudah ditemukan",dikembalikan:"Sudah dikembalikan"})[itemStatus]||"Belum ditemukan";return `<article class="item-card"><div class="item-image">${r.image_url?`<img src="${esc(r.image_url)}" alt="${esc(r.title)}">`:`<span class="item-placeholder">${icon(({Electronics:"package",Accessories:"spark",Documents:"list",Bags:"package",Other:"grid"})[r.category]||"package",52)}</span>`}<span class="item-status ${r.type}">${r.type.toUpperCase()}</span><button class="save-btn ${isSaved?"saved":""}" data-save="${r.id}" aria-label="Save item">${isSaved?icon("heart",15):icon("heart",15)}</button></div><div class="item-content"><span class="item-category">${esc(r.category.toUpperCase())}</span><h3>${esc(r.title)}</h3><div class="item-meta"><span>${icon("pin",12)} ${esc(r.location)}</span></div><small class="item-availability">Status barang: ${statusLabel}</small><div class="item-footer"><span class="item-date">${dateLabel(r.created_at)}</span><button class="item-open" data-detail="${r.id}">Lihat detail ${icon("arrow",13)}</button></div></div></article>`}
+async function loadData(){if(!db){renderAll();return}const {data,error}=await db.from("reports").select("*").order("created_at",{ascending:false});if(error){console.error(error);toast("Could not load reports. Check Supabase setup.");return}reports=data||[];if(session){const {data:saved}=await db.from("saved_items").select("report_id").eq("user_id",session.user.id);savedIds=(saved||[]).map(x=>x.report_id)}renderAll()}
+async function loadProfile(){if(!db)return;const {data:{session:s}}=await db.auth.getSession();session=s;if(session){const {data}=await db.from("profiles").select("*").eq("id",session.user.id).single();profile=data||{id:session.user.id,name:session.user.email,email:session.user.email,role:"user"}}else profile=null;updateAccount()}
+function updateAccount(){const n=profile?.name||"Guest",initial=n[0]?.toUpperCase()||"G";$("#sideName").textContent=n;$("#sideEmail").textContent=profile?`${profile.email||session.user.email} · ${profile.role}`:"Not signed in";$("#sideAvatar").textContent=initial;$("#topAvatar").textContent=initial;$$(".staff-only").forEach(x=>x.hidden=!staff());$("#staffRole").textContent=role().toUpperCase();$("#membersTab").hidden=role()!=="admin"}
+function renderHome(){const approved=reports.filter(r=>r.status==="approved"||r.status==="returned");$("#recentGrid").innerHTML=approved.slice(0,3).map(card).join("")||empty("No public reports yet","Laporan yang disetujui akan muncul di sini.");$("#statTotal").textContent=String(approved.length).padStart(2,"0");$("#statFound").textContent=String(approved.filter(r=>r.type==="found").length).padStart(2,"0");$("#statReturned").textContent=String(reports.filter(r=>r.status==="returned").length).padStart(2,"0");$("#statMine").textContent=String(reports.filter(r=>r.user_id===session?.user?.id).length).padStart(2,"0")}
+function renderExplore(){const q=($("#searchInput")?.value||"").toLowerCase(),cat=$("#categoryFilter")?.value||"all";const list=reports.filter(r=>(r.status==="approved"||r.status==="returned")&&(activeType==="all"||r.type===activeType)&&(cat==="all"||r.category===cat)&&[r.title,r.location,r.category,r.description].join(" ").toLowerCase().includes(q));$("#exploreGrid").innerHTML=list.map(card).join("")||empty("No matching items","Coba kata kunci lain atau cek kembali nanti.");$("#resultsCount").textContent=`Menampilkan ${list.length} laporan yang disetujui`}
+function renderSaved(){const list=reports.filter(r=>savedIds.includes(r.id));$("#savedGrid").innerHTML=list.map(card).join("")||empty("Nothing saved yet","Masuk lalu tekan ikon hati pada laporan untuk menyimpannya.")}
+function renderMine(){const list=reports.filter(r=>r.user_id===session?.user?.id);$("#myReportsGrid").innerHTML=list.map(card).join("")||empty("No reports from you yet","Buat laporan dan laporan tersebut akan muncul di sini.")}
+function renderAll(){renderHome();renderExplore();renderSaved();renderMine();updateAccount()}
+function showPage(p){if(p==="admin"&&!staff()){toast("Khusus pengelola sekolah.");return}$$(".page").forEach(x=>x.classList.toggle("active",x.id===`page-${p}`));$$(".nav-item").forEach(x=>x.classList.toggle("active",x.dataset.page===p));$$(".mobile-nav-item").forEach(x=>x.classList.toggle("active",x.dataset.page===p));$("#breadcrumbPage").textContent=({home:"Overview",explore:"Explore items",saved:"Saved items",myreports:"My reports",admin:"Admin panel"})[p]||"Overview";if(p==="admin")loadAdmin();window.scrollTo({top:0,behavior:"smooth"})}
+function modal(html){$("#modalContent").innerHTML=html;$("#modalBackdrop").classList.add("show")}function closeModal(){$("#modalBackdrop").classList.remove("show")}
+function authModal(mode="login"){const register=mode==="register";modal(`<div class="eyebrow">AKUN TEMUBARANG</div><h2>${register?"Create account.":"Selamat datang kembali."}</h2><p class="modal-sub">${register?"Buat akun untuk mengirim laporan dan menyimpan barang.":"Masuk untuk mengelola laporan dan barang tersimpan."}</p><form id="authForm"><div class="form-grid">${register?`<div class="field full"><label>NAMA LENGKAP</label><input name="name" required maxlength="70" placeholder="Your name"></div>`:""}<div class="field full"><label>ALAMAT EMAIL</label><input name="email" type="email" required placeholder="you@email.com"></div><div class="field full"><label>KATA SANDI</label><input name="password" type="password" required minlength="8" placeholder="At least 8 characters"></div></div><button class="btn btn-primary form-submit">${register?"Create account":"Sign in"} ${icon("arrow",13)}</button></form><p class="modal-sub" style="margin-top:15px">${register?'Already have an account? <button class="text-link" id="switchAuth">Sign in</button>':'New to TRACE? <button class="text-link" id="switchAuth">Create account</button>'}</p>`);$("#authForm").onsubmit=async e=>{e.preventDefault();const fd=new FormData(e.currentTarget);let res;if(register){res=await db.auth.signUp({email:fd.get("email"),password:fd.get("password"),options:{data:{name:fd.get("name")}}})}else{res=await db.auth.signInWithPassword({email:fd.get("email"),password:fd.get("password")})}if(res.error){toast(res.error.message);return}if(register&&!res.data.session){closeModal();toast("Check your email to confirm your account.");return}await loadProfile();await loadData();closeModal();toast(register?"Account created.":"Signed in.");};$("#switchAuth").onclick=()=>authModal(register?"login":"register")}
+function accountModal(){if(!db){setupNotice();return}if(!session){authModal("login");return}modal(`<div class="eyebrow">ACCOUNT SETTINGS</div><h2>Your profile.</h2><div class="profile-head"><div class="profile-large">${esc((profile?.name||"U")[0].toUpperCase())}</div><div><h3>${esc(profile?.name||"User")}</h3><p>${esc(session.user.email)} · ${esc(role())}</p></div></div><form id="profileForm"><div class="form-grid"><div class="field full"><label>DISPLAY NAME</label><input name="name" value="${esc(profile?.name||"")}" required maxlength="70"></div></div><button class="btn btn-primary form-submit">Save profile</button></form><button class="btn btn-ghost form-submit" id="signOut">Sign out</button>`);$("#profileForm").onsubmit=async e=>{e.preventDefault();const name=new FormData(e.currentTarget).get("name").trim();const {error}=await db.from("profiles").update({name}).eq("id",session.user.id);if(error){toast(error.message);return}await loadProfile();closeModal();toast("Profile updated.")};$("#signOut").onclick=async()=>{await db.auth.signOut();session=null;profile=null;savedIds=[];await loadData();closeModal();toast("Signed out.")}}
+function setupNotice(){modal(`<div class="eyebrow">SETUP REQUIRED</div><h2>Connect Supabase.</h2><p class="modal-sub">The site files are ready, but authentication and shared data need your Supabase project URL and anon key. Follow SETUP.md, then add them to config.js.</p><button class="btn btn-primary form-submit" id="noticeClose">Got it</button>`);$("#noticeClose").onclick=closeModal}
+function reportModal(type="lost"){if(!db){setupNotice();return}if(!session){authModal("login");toast("Sign in before creating a report.");return}modal(`<div class="eyebrow">COMMUNITY CONTRIBUTION</div><h2>Create a report.</h2><p class="modal-sub">Reports are sent to the moderation queue before becoming public.</p><form id="reportForm"><div class="form-grid"><div class="field"><label>REPORT TYPE</label><select name="type"><option value="lost" ${type==="lost"?"selected":""}>I lost an item</option><option value="found" ${type==="found"?"selected":""}>I found an item</option></select></div><div class="field"><label>CATEGORY</label><select name="category"><option>Electronics</option><option>Accessories</option><option>Documents</option><option>Bags</option><option>Other</option></select></div><div class="field full"><label>ITEM NAME</label><input name="title" required maxlength="80" placeholder="e.g. Black wireless headphones"></div><div class="field full"><label>LOCATION</label><input name="location" required maxlength="120" placeholder="Where was it lost or found?"></div><div class="field full"><label>DESCRIPTION</label><textarea name="description" required maxlength="1000" placeholder="Describe identifying details..."></textarea></div></div><button class="btn btn-primary form-submit">Submit for review ${icon("arrow",13)}</button></form>`);$("#reportForm").onsubmit=async e=>{e.preventDefault();const fd=new FormData(e.currentTarget);const row={user_id:session.user.id,type:fd.get("type"),category:fd.get("category"),title:fd.get("title").trim(),location:fd.get("location").trim(),description:fd.get("description").trim(),status:"pending"};const {error}=await db.from("reports").insert(row);if(error){toast(error.message);return}closeModal();await loadData();showPage("myreports");toast("Report submitted for moderation.")}}
+async function detailModal(id){const r=reports.find(x=>x.id===id);if(!r)return;modal(`<div class="eyebrow">${esc(r.id.slice(0,8))} / ITEM DETAILS</div><h2>${esc(r.title)}</h2><div class="detail-image">${r.image_url?`<img src="${esc(r.image_url)}">`:`<span>${icon(({Electronics:"package",Accessories:"spark",Documents:"list",Bags:"package",Other:"grid"})[r.category]||"package",52)}</span>`}</div><p class="detail-description">${esc(r.description)}</p><div class="detail-facts"><div class="detail-fact"><span>REPORT TYPE</span><strong>${r.type.toUpperCase()}</strong></div><div class="detail-fact"><span>CATEGORY</span><strong>${esc(r.category)}</strong></div><div class="detail-fact"><span>LOCATION</span><strong>${esc(r.location)}</strong></div><div class="detail-fact"><span>STATUS LAPORAN</span><strong>${esc(r.status)}</strong></div><div class="detail-fact"><span>STATUS BARANG</span><strong>${({belum_ditemukan:"Belum ditemukan",ditemukan:"Sudah ditemukan",dikembalikan:"Sudah dikembalikan"})[r.item_status||"belum_ditemukan"]}</strong></div></div><div class="detail-actions"><button class="btn btn-primary" id="contactReporter">Contact reporter ${icon("arrow",13)}</button><button class="btn btn-ghost" id="detailClose">Close</button></div>`);$("#contactReporter").onclick=()=>toast("Contact details are kept private in this demo. Add a secure contact flow before launch.");$("#detailClose").onclick=closeModal}
+async function toggleSave(id){if(!session){authModal("login");toast("Sign in to save items.");return}if(savedIds.includes(id)){const {error}=await db.from("saved_items").delete().eq("report_id",id).eq("user_id",session.user.id);if(error){toast(error.message);return}savedIds=savedIds.filter(x=>x!==id)}else{const {error}=await db.from("saved_items").insert({report_id:id,user_id:session.user.id});if(error){toast(error.message);return}savedIds.push(id)}renderAll()}
+async function loadAdmin(){if(!staff())return;const {data,error}=await db.from("reports").select("*").order("created_at",{ascending:false});if(error){$("#adminReportsTable").innerHTML=empty("Unable to load reports",error.message);return}const rows=data||[];$("#adminReportsTable").innerHTML=rows.length?`<table class="admin-table"><thead><tr><th>ITEM</th><th>TYPE</th><th>OWNER ID</th><th>STATUS LAPORAN</th><th>STATUS BARANG</th><th>ACTION</th></tr></thead><tbody>${rows.map(r=>`<tr><td><strong>${esc(r.title)}</strong><br><small>${esc(r.location)}</small></td><td>${r.type}</td><td>${esc(r.user_id.slice(0,8))}…</td><td><span class="role-pill ${r.status}">${r.status}</span></td><td><select data-item-status="${r.id}"><option value="belum_ditemukan" ${(r.item_status||"belum_ditemukan")==="belum_ditemukan"?"selected":""}>Belum ditemukan</option><option value="ditemukan" ${r.item_status==="ditemukan"?"selected":""}>Sudah ditemukan</option><option value="dikembalikan" ${r.item_status==="dikembalikan"?"selected":""}>Sudah dikembalikan</option></select></td><td><select data-status="${r.id}"><option value="pending" ${r.status==="pending"?"selected":""}>Pending</option><option value="approved" ${r.status==="approved"?"selected":""}>Approve</option><option value="rejected" ${r.status==="rejected"?"selected":""}>Reject</option><option value="returned" ${r.status==="returned"?"selected":""}>Returned</option></select> <button data-review="${r.id}">Save</button>${role()==="admin"?` <button data-delete-report="${r.id}" class="btn btn-ghost btn-small" style="color:#dc2626">Hapus</button>`:""}</td></tr>`).join("")}</tbody></table>`:empty("No reports submitted","New reports will appear here.");$("#adminReportsTable").querySelectorAll("[data-review]").forEach(b=>b.onclick=async()=>{const id=b.dataset.review,status=$(`[data-status="${id}"]`).value,item_status=$(`[data-item-status="${id}"]`).value;const {error}=await db.from("reports").update({status,item_status}).eq("id",id);if(error){toast(error.message);return}await loadData();await loadAdmin();toast("Status laporan dan barang berhasil diperbarui.")});$("#adminReportsTable").querySelectorAll("[data-delete-report]").forEach(b=>b.onclick=async()=>{if(role()!=="admin"){toast("Hanya admin yang bisa menghapus laporan.");return}const id=b.dataset.deleteReport;const report=rows.find(r=>String(r.id)===String(id));if(!report)return;if(!confirm(`Hapus laporan "${report.title}" secara permanen?`))return;b.disabled=true;const {error}=await db.from("reports").delete().eq("id",id);if(error){b.disabled=false;toast("Gagal menghapus: "+error.message);return}reports=reports.filter(r=>String(r.id)!==String(id));savedIds=savedIds.filter(x=>String(x)!==String(id));await loadData();await loadAdmin();toast("Laporan berhasil dihapus.")});if(role()==="admin")await loadMembers()}
+async function loadMembers(){const {data,error}=await db.from("profiles").select("id,name,email,role").order("created_at",{ascending:false});if(error){$("#adminMembersTable").innerHTML=empty("Unable to load members",error.message);return}$("#adminMembersTable").innerHTML=(data||[]).map(p=>`<div class="stat-card" style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;min-height:auto"><div><strong style="font-size:13px">${esc(p.name||"Unnamed")}</strong><div class="stat-foot">${esc(p.email||"")} · ${p.id.slice(0,8)}…</div></div><select data-role="${p.id}"><option value="user" ${p.role==="user"?"selected":""}>User</option><option value="moderator" ${p.role==="moderator"?"selected":""}>Moderator</option><option value="admin" ${p.role==="admin"?"selected":""}>Admin</option></select><button data-role-save="${p.id}" class="btn btn-primary btn-small">Update</button></div>`).join("")||empty("No members","Registered users will appear here.");$("#adminMembersTable").querySelectorAll("[data-role-save]").forEach(b=>b.onclick=async()=>{const id=b.dataset.roleSave,newRole=$(`[data-role="${id}"]`).value;const {error}=await db.from("profiles").update({role:newRole}).eq("id",id);if(error){toast(error.message);return}toast("Member role updated.");await loadMembers()})}
+function switchAdminTab(tab){adminTab=tab;$("#adminReports").hidden=tab!=="reports";$("#adminMembers").hidden=tab!=="members";$$("[data-admin-tab]").forEach(b=>b.classList.toggle("active",b.dataset.adminTab===tab))}
+document.addEventListener("click",e=>{const p=e.target.closest("[data-page]"),a=e.target.closest("[data-action]"),d=e.target.closest("[data-detail]"),s=e.target.closest("[data-save]"),at=e.target.closest("[data-admin-tab]");if(p){showPage(p.dataset.page);return}if(a){if(a.dataset.action==="report")reportModal(a.dataset.type||"lost");if(a.dataset.action==="profile")accountModal();return}if(d){detailModal(d.dataset.detail);return}if(s){toggleSave(s.dataset.save);return}if(at){switchAdminTab(at.dataset.adminTab)}});
+$("#modalClose").onclick=closeModal;$("#modalBackdrop").addEventListener("click",e=>{if(e.target.id==="modalBackdrop")closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});$("#searchInput").addEventListener("input",renderExplore);$("#categoryFilter").addEventListener("change",renderExplore);$$(".segment").forEach(b=>b.addEventListener("click",()=>{$$(".segment").forEach(x=>x.classList.remove("active"));b.classList.add("active");activeType=b.dataset.filter;renderExplore()}));
+if(!db){console.warn("TRACE is not connected to Supabase. See SETUP.md.");renderAll()}else{(async()=>{await loadProfile();await loadData();db.auth.onAuthStateChange(async()=>{await loadProfile();await loadData()})})()}

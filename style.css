@@ -122,3 +122,42 @@ button,select,input,textarea{max-width:100%}
   .mobile-nav-item small{font-size:8px}
 }
 @media(hover:none){.item-card:hover,.btn:hover{transform:none}}
+
+
+/* Interface refinement: restrained surfaces, clearer hierarchy */
+:root{--lime:#79c5ff}
+body{background:#0b1728;color:#e7eef7;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+button,input,select,textarea{font:inherit}
+.btn{border-radius:7px;transition:background .16s ease,border-color .16s ease}
+.btn-primary{background:#79c5ff;color:#0b1728;border:1px solid #79c5ff}
+.btn-primary:hover{background:#9bd5ff}
+.btn-ghost{border:1px solid #29415e;color:#d8e6f4;background:#142b45}
+.item-card,.stat-card,.detail-fact,.search-box,.filter-bar select{border:1px solid #203c59;box-shadow:none}
+.item-card{border-radius:9px;overflow:hidden;transition:border-color .16s ease}
+.item-card:hover{transform:translateY(-2px);border-color:#4c83ad}
+.item-image{border-radius:0}
+.item-content h3{letter-spacing:-.2px}
+.eyebrow,.stat-label,.detail-fact span{letter-spacing:.8px}
+.modal{background:#10243b;border:1px solid #2c4b69;box-shadow:0 18px 60px #020914aa;border-radius:14px}
+.modal h2{letter-spacing:-.6px}
+.detail-image{border-radius:9px}
+.detail-fact{border-radius:7px}
+.admin-table{border:1px solid #29415e;border-radius:8px}
+.admin-table th{color:#9fb8cf;letter-spacing:.5px}
+:focus-visible{outline:2px solid #79c5ff;outline-offset:2px}
+@media(max-width:760px){
+  .modal-backdrop.show{z-index:45;align-items:flex-end;padding:10px 10px calc(10px + env(safe-area-inset-bottom))}
+  .modal{width:100%;max-height:calc(100dvh - 20px - env(safe-area-inset-bottom));padding:24px 17px 22px;overflow-y:auto;overscroll-behavior:contain;border-radius:14px}
+  .modal-close{position:sticky;float:right;top:0;right:0;z-index:2;margin:-5px -4px 0 8px;background:#10243b;border-radius:50%;width:30px;height:30px;line-height:26px}
+  .detail-image{height:clamp(145px,42vw,210px);margin:14px 0}
+  .detail-description{font-size:13px;line-height:1.65}
+  .detail-facts{gap:8px;margin:14px 0}
+  .detail-fact{padding:10px;min-height:58px}
+  .detail-fact strong{font-size:12px;overflow-wrap:anywhere}
+  .detail-actions{position:static;display:grid;grid-template-columns:1fr 1fr}
+  .mobile-nav{z-index:30}
+  .topbar{border-bottom:1px solid #203c59}
+  .hero{box-shadow:none}
+  .stat-card{border-radius:8px}
+  .item-card:hover{transform:none}
+}

@@ -161,3 +161,49 @@ button,input,select,textarea{font:inherit}
   .stat-card{border-radius:8px}
   .item-card:hover{transform:none}
 }
+
+
+/* Brighter blue refresh */
+:root{
+  --bg:#071b33;
+  --panel:#102d4d;
+  --panel2:#173d65;
+  --line:#2b5680;
+  --muted:#a9c4df;
+  --text:#f1f7ff;
+  --lime:#79c5ff;
+  --lime-dark:#3d9de0;
+}
+body{background:#081d36;color:#f1f7ff}
+.sidebar{background:#0d2947}
+.topbar{border-color:#24496d}
+.hero{background:linear-gradient(120deg,#123b63 0%,#164a78 58%,#1c5a8c 100%);border-color:#2b6394}
+.orbit{border-color:#4d8cbd}
+.orbit-two{border-color:#356b99}
+.card-back{background:#8bd0ff;color:#102a43}
+.fake-lines{background:repeating-linear-gradient(to bottom,transparent 0 13px,#4b82ad 14px 15px)}
+.card-front{background:#edf7ff;color:#15324d}
+.key-illustration{color:#4388bb}
+.stat-card,.item-card,.search-box,.filter-bar select,.admin-table{background:#102d4d}
+.item-image,.detail-image,.detail-fact{background:#173d65}
+.help-card,.notice,.stat-highlight{background:#153b60;border-color:#326b9b}
+.nav-item.active,.mobile-nav-item.active,.segment.active{background:#1b4c78;color:#9bd8ff}
+.btn-primary{background:#79c5ff;color:#08213b;border-color:#79c5ff}
+.btn-primary:hover{background:#a3ddff;border-color:#a3ddff}
+.btn-ghost{background:#1a4268;border-color:#35658f;color:#e8f5ff}
+.bottom-banner{background:#8bd0ff;color:#08213b}
+.bottom-banner .eyebrow,.bottom-banner p{color:#245477}
+.btn-dark{background:#103252;color:#eff8ff}
+.toast{background:#8bd0ff;color:#08213b}
+.modal{background:#102d4d;border-color:#35658f}
+.field input,.field select,.field textarea,.admin-table select{background:#081d36;border-color:#315b82;color:#f1f7ff}
+.ui-icon{display:inline-block;vertical-align:middle;flex:none}
+.nav-icon{display:inline-flex;align-items:center;justify-content:center}
+.help-icon{display:inline-flex;align-items:center}
+.key-illustration{display:grid;place-items:center}
+.item-placeholder{display:grid;place-items:center}
+.item-open,.text-link,.help-card button{display:inline-flex;align-items:center;gap:5px}
+.item-meta svg{vertical-align:-2px}
+.mobile-nav-item span{display:flex;align-items:center;justify-content:center}
+.save-btn{display:grid;place-items:center}
+.save-btn svg{width:15px;height:15px}
